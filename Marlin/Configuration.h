@@ -490,9 +490,18 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Ultimaker
-  #define DEFAULT_Kp 16.97
-  #define DEFAULT_Ki 0.96
-  #define DEFAULT_Kd 74.73
+  // #define DEFAULT_Kp 16.97
+  // #define DEFAULT_Ki 0.96
+  // #define DEFAULT_Kd 74.73
+
+  // #define DEFAULT_Kp 19.91
+  // #define DEFAULT_Ki 3.11
+  // #define DEFAULT_Kd 31.81
+
+  #define DEFAULT_Kp 9.95
+  #define DEFAULT_Ki 0.53
+  #define DEFAULT_Kd 47.00
+
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -798,8 +807,8 @@
  */
 #define CLASSIC_JERK
 #if ENABLED(CLASSIC_JERK)
-  #define DEFAULT_XJERK  8.0
-  #define DEFAULT_YJERK  8.0
+  #define DEFAULT_XJERK  10.0
+  #define DEFAULT_YJERK  10.0
   #define DEFAULT_ZJERK  0.4
 
   //#define TRAVEL_EXTRA_XYJERK 0.0     // Additional jerk allowance for all travel moves
@@ -810,7 +819,7 @@
   #endif
 #endif
 
-#define DEFAULT_EJERK    5.0  // May be used by Linear Advance
+#define DEFAULT_EJERK    4.5  // May be used by Linear Advance
 
 /**
  * Junction Deviation Factor

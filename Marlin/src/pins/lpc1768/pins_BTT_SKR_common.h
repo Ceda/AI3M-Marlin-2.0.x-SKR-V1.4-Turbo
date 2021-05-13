@@ -83,7 +83,11 @@
   #endif
 #endif
 #ifndef FAN_PIN
-  #define FAN_PIN                          P2_03
+  // #define FAN_PIN                          P2_03
+  // INFO - Change from burned 2.3 pin to power detect pin with mosfet
+  // https://makerselectronics.com/product/lr7843-mosfet-control-module
+  // https://iamanerd.org.uk/adding-an-additional-fan-on-btt-skr-1-4-turbo-using-marlin/
+  #define FAN_PIN                          P1_00
 #endif
 #ifndef HEATER_BED_PIN
   #define HEATER_BED_PIN                   P2_05
