@@ -498,10 +498,14 @@
   // #define DEFAULT_Ki 3.11
   // #define DEFAULT_Kd 31.81
 
-  #define DEFAULT_Kp 9.95
-  #define DEFAULT_Ki 0.53
-  #define DEFAULT_Kd 47.00
+  // #define DEFAULT_Kp 9.95
+  // #define DEFAULT_Ki 0.53
+  // #define DEFAULT_Kd 47.00
 
+
+  #define DEFAULT_Kp 10.72
+  #define DEFAULT_Ki 0.31
+  #define DEFAULT_Kd 92.51
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -609,7 +613,7 @@
 
 #define THERMAL_PROTECTION_HOTENDS // Enable thermal protection for all extruders
 #define THERMAL_PROTECTION_BED     // Enable thermal protection for the heated bed
-#define THERMAL_PROTECTION_CHAMBER // Enable thermal protection for the heated chamber
+// #define THERMAL_PROTECTION_CHAMBER // Enable thermal protection for the heated chamber
 
 //===========================================================================
 //============================= Mechanical Settings =========================
@@ -2307,7 +2311,7 @@
 // However, control resolution will be halved for each increment;
 // at zero value, there are 128 effective control positions.
 // :[0,1,2,3,4,5,6,7]
-#define SOFT_PWM_SCALE 2
+#define SOFT_PWM_SCALE 0
 
 // If SOFT_PWM_SCALE is set to a value higher than 0, dithering can
 // be used to mitigate the associated resolution loss. If enabled,
