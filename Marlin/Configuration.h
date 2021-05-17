@@ -761,7 +761,8 @@
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
 // #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 400, 402.97 } // Titan aero extuder
+// #define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 400, 424.02 } // Titan aero extuder
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 400, 424.02 } // BMG Wind with 40mm motor
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1008,7 +1009,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 1.8, -27.1, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { 1.8, -27.1, -0.4 }
 
 
 // Most probes should stay away from the edges of the bed, but
@@ -1131,7 +1132,7 @@
 
 //#define UNKNOWN_Z_NO_RAISE      // Don't raise Z (lower the bed) if Z is "unknown." For beds that fall when Z is powered off.
 
-//#define Z_HOMING_HEIGHT  4      // (mm) Minimal Z height before homing (G28) for Z clearance above the bed, clamps, ...
+#define Z_HOMING_HEIGHT  4      // (mm) Minimal Z height before homing (G28) for Z clearance above the bed, clamps, ...
                                   // Be sure to have this much clearance over your Z_MAX_POS to prevent grinding.
 
 //#define Z_AFTER_HOMING  10      // (mm) Height to move to after homing Z
@@ -1145,11 +1146,11 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 215
-#define Y_BED_SIZE 215
+#define X_BED_SIZE 210
+#define Y_BED_SIZE 210
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS -5
+#define X_MIN_POS 0
 #define Y_MIN_POS -5
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
