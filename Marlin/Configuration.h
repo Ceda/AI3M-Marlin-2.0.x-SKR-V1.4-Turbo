@@ -502,10 +502,9 @@
   // #define DEFAULT_Ki 0.53
   // #define DEFAULT_Kd 47.00
 
-
-  #define DEFAULT_Kp 10.72
-  #define DEFAULT_Ki 0.31
-  #define DEFAULT_Kd 92.51
+  #define DEFAULT_Kp 11.61
+  #define DEFAULT_Ki 0.56
+  #define DEFAULT_Kd 60.60
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -554,9 +553,13 @@
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 32.65
-  #define DEFAULT_bedKi 1.31
-  #define DEFAULT_bedKd 541.84
+  // #define DEFAULT_bedKp 32.65
+  // #define DEFAULT_bedKi 1.31
+  // #define DEFAULT_bedKd 541.84
+
+  #define DEFAULT_bedKp 44.01
+  #define DEFAULT_bedKi 2.20
+  #define DEFAULT_bedKd 586.84
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
